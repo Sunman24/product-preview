@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="src/css/app.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <title>Product preview card component</title>
+  <script>
+    tailwind.config = {
+      theme: {
+
+        extend: {
+
+
+        },
+
+        colors: {
+          'Dark-cyan': 'hsl(158, 36%, 37%)',
+          'Very-Dark-cyan': 'hsl(158, 36%, 15%)',
+          'Cream': 'hsl(30, 38%, 92%)',
+          'Very-dark-blue': 'hsl(212, 21%, 14%)',
+          'Dark-grayish-blue': 'hsl(228, 12%, 48%)',
+          'White': 'hsl(0, 0%, 100%)'
+        }
+
+
+
+      },
+    }
+  </script>
+
+  <style>
+    h1,
+    h2 {
+      font-family: "Fraunces";
+    }
+
+    p,
+    h3 {
+      font-family: "Montserrat";
+    }
+  </style>
+
+</head>
+
+<body class="flex flex-col items-center justify-center">
+  <div class="bg-Cream w-screen max-h-screen items-center justify-center flex flex-col lg:flex-row p-60    ">
+
+
+    <div class=" grid grid-cols-1 lg:flex">
+
+      <div class=" col-span-1  lg:row-span-1  lg:w-72 w-80  ">
+        <div><img src="images/image-product-mobile.jpg" alt="mob-img"
+            class="   rounded-t-lg xs:flex flex  lg:hidden object-cover ">
+        </div>
+        <div><img src="images/image-product-desktop.jpg" alt="desk-img" class="  lg:rounded-l-lg hidden   lg:flex ">
+        </div>
+      </div>
+
+      <div
+        class="bg-White  rounded-b-lg p-6 lg:rounded-r-lg lg:rounded-bl-none col-span-1  flex flex-col justify-center lg:w-72 w-80 ">
+        <p class="text-xs text-Dark-grayish-blue">P E R F U M E</p>
+
+        <h1 class="text-3xl py-4 text-Very-dark-blue">Gabrielle Essence Eau De Parfum</h1>
+
+        <div class="space-y-1">
+
+          <p class="text-xs text-Dark-grayish-blue"> A floral, solar and voluptuous</p>
+          <p class="text-xs text-Dark-grayish-blue">interpretation composed by Olivier </p>
+          <p class="text-xs text-Dark-grayish-blue ">Polge, Perfumer-Creator for House of</p>
+          <p class="text-xs text-Dark-grayish-blue">CHANEL.</p>
+
+
+        </div>
+        <div class="flex items-center justify-start">
+
+          <h2 class="text-3xl pt-4 pb-2 text-Dark-cyan">
+
+            $149.99
+          </h2>
+          <h3 class="pt-2 pl-6 text-xs line-through text-Dark-grayish-blue">
+
+            $169.99
+          </h3>
+
+        </div>
+
+        <div class="pt-3">
+
+          <button
+            class="w-full h-11 bg-Dark-cyan hover:bg-Very-Dark-cyan  rounded-lg text-White flex items-center justify-center">
+            <img src="images/icon-cart.svg" alt="cart-logo" class="pr-3">
+            <p class="text-xs font-semibold">Add to Cart</p>
+
+          </button>
+        </div>
+
+
+
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+
+  <footer class="bg-Cream text-Very-Dark-cyan text-center flex justify-center w-full text-xs">
+    <p> Challenge by </p><a href="https://www.frontendmentor.io" target="_blank">
+      <p class="text-Dark-cyan hover:text-cyan pl-2 pr-2">Frontend Mentor</p>
+    </a>.
+    <p> Coded by </p><a href="https://www.frontendmentor.io/profile/Sunman24">
+      <p class="text-Dark-cyan hover:text-cyan pl-2">Sunman24</p>
+    </a>.
+  </footer>
+
+</body>
+
+
+</html>
